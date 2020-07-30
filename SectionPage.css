@@ -1,5 +1,6 @@
 body {
     overflow-x: hidden;
+    background: gray;
 }
 
 * {
@@ -2164,10 +2165,6 @@ ol.v-story-indicators li.triangle {
 
 
 /* ==================================================================  */
-@font-face {
-    font-family: EkMukta-Regular;
-    src: url(EkMukta-Regular.ttf);
-  }
 
 .container {
     display: flex;
@@ -2246,7 +2243,7 @@ img {
     height: auto;
     width: fit-content;
     text-align: center;
-    font-family: GothamBook;
+    font-family: sakalfont;
     font-size: 14px;
     color: #004BA0;
 }
@@ -2257,7 +2254,7 @@ img {
     font-weight: 600;
     font-size: 18px;
     color: black;
-    font-family: EkMukta-Regular;
+    font-family: sakalfont;
     font-style: normal;
     background: #ffffff;
     width: fit-content;
@@ -2299,7 +2296,7 @@ img {
     color: #999999;
     display: inline-block;
     font-size: 11px;
-    font-family: GothamBook;
+    font-family: sakalfont;
     height: 10px;
     font-style: normal;
     margin-top: -10px;
@@ -2310,7 +2307,7 @@ img {
     color: #999999;
     display: inline-block;
     font-size: 11px;
-    font-family: EkMukta-Regular;
+    font-family: sakalfont;
     height: 10px;
     font-style: normal;
     margin-top: -10px;
@@ -2327,7 +2324,7 @@ img {
     margin-top: -10px;
     height: 10px;
     width: 10px;
-    font-family: EkMukta-Regular;
+    font-family: sakalfont;
     font-size: 11px;
 }
 
@@ -2336,8 +2333,9 @@ ul {
     height: 20px;
     margin-left: -20px;
     margin-bottom: 0px;
+    justify-content: center;
     vertical-align: center;
-    font-family: EkMukta-Regular;
+    font-family: sakalfont;
 }
 
 li {
@@ -2346,9 +2344,9 @@ li {
     vertical-align: center;
     position: relative;
     font-size: 11px;
-    font-family: EkMukta-Regular;
+    font-family: sakalfont;
     font-style: bold;
-    margin-top: -10px;
+    margin-top: -15px;
     color: #004BA0;
     font-size: 12px;
 }
@@ -2360,12 +2358,12 @@ li {
 }
 
 .title {
-    margin: 20px;
+    margin-top: -12px;
     margin-left: 20px;
-    margin-bottom: 0px;
+    justify-content: center;
     color: #004BA0;
     font-size: 11px;
-    font-family: EkMukta-Regular;
+    font-family: sakalfont;
     font-style: bold;
     background: #ffffff;
 }
@@ -2375,8 +2373,7 @@ li {
     font-size: 14px;
     margin-left: 45px;
     padding: 10px;
-    font-family: EkMukta-Regular;
-
+    font-family: sakalfont;
 }
 
 .news-description #content2 {
@@ -2384,17 +2381,26 @@ li {
     font-size: 14px;
     margin: 10px;
     margin-left: 80px;
-    font-family: EkMukta-Regular;
+    font-family: sakalfont;
 }
 
 .base-title #section3 {
     width: 350px;
     font-size: 20px;
-    font-family: EkMukta-Regular;
+    font-family: sakalfont;
 }
 
 .base-title #section4 {
     width: 350px;
     font-size: 29px;
-    font-family: EkMukta-Regular;
+    font-family: sakalfont;
+}
+
+div#iconbox {
+    width: 15px;
+    height: 15px;
+}
+
+.title .titlewithouticon {
+    margin-top: 25px;
 }
