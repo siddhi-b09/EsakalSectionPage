@@ -2249,7 +2249,7 @@ img {
 }
 
 .base-title {
-    padding: 10px;
+    padding-left: 10px;
     margin-left: 10px;
     font-weight: 600;
     font-size: 18px;
@@ -2346,7 +2346,7 @@ li {
     font-size: 11px;
     font-family: sakalfont;
     font-style: bold;
-    margin-top: -15px;
+    margin-top: -14px;
     color: #004BA0;
     font-size: 12px;
 }
@@ -2358,7 +2358,7 @@ li {
 }
 
 .title {
-    margin-top: -12px;
+    margin-top: -9px;
     margin-left: 20px;
     justify-content: center;
     color: #004BA0;
@@ -2369,10 +2369,9 @@ li {
 }
 
 .news-description #content {
-    height: 80px;
+    height: 90px;
     font-size: 14px;
     margin-left: 45px;
-    padding: 10px;
     font-family: sakalfont;
 }
 
@@ -2402,8 +2401,9 @@ div#iconbox {
 }
 
 .title .titlewithouticon {
-    margin-top: 31px;
+    margin-top: 25px;
     font-weight: bold;
+    padding-bottom: 14px;
 }
 
 .photographycontainer {
