@@ -1934,8 +1934,8 @@ ol.v-story-indicators li.triangle {
 
 #base-container {
     margin: 10px;
-    width: 300px;
-    height: 575px;
+    width: 100%;
+    height: 450px;
     border-style: solid;
     border-width: 1px;
     border-color: #DDDDDD;
@@ -1959,7 +1959,6 @@ img {
 
 #base-container #base-textwrapper {
     width: 100%;
-    height: fit-content;
 }
 
 #base-textwrapper #base-headline {
@@ -2010,20 +2009,10 @@ img {
     line-height: 1.3;
 }
 
-#base-container2 {
-    margin-top: -20px;
-    margin: 10px;
-    width: 300px;
-    height: 535px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #DDDDDD;
-}
-
 #base-container3 {
     margin-top: -20px;
     margin: 10px;
-    width: 460px;
+    width: 100%;
     height: 510px;
     border-style: solid;
     border-width: 1px;
@@ -2038,7 +2027,7 @@ img {
 #base-container4 {
     margin-top: -20px;
     margin: 10px;
-    width: 460px;
+    width: 100%;
     height: 320px;
 }
 
@@ -2159,6 +2148,15 @@ div#iconbox {
 .photographycontainer {
     height: 1500px;
     background: lawngreen;
+}
+
+div.add-radius {
+    border-radius: 3px;
+}
+
+.add-radius img {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 }
 
 
