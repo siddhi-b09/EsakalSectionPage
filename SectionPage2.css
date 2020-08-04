@@ -2150,6 +2150,10 @@ div#iconbox {
     background: lawngreen;
 }
 
+.photographydescription {
+    height: 36px;
+}
+
 div.add-radius {
     border-radius: 3px;
 }
