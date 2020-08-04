@@ -1934,7 +1934,7 @@ ol.v-story-indicators li.triangle {
 
 #base-container {
     margin: 10px;
-    width: 100%;
+    width: 300px;
     height: 450px;
     border-style: solid;
     border-width: 1px;
@@ -1950,7 +1950,7 @@ ol.v-story-indicators li.triangle {
 }
 
 #base-image {
-    width: 100%;
+    width: 298px;
 }
 
 img {
