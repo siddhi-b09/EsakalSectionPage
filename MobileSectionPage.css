@@ -1,0 +1,54 @@
+body {
+    background: gray;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    width: 1100px;
+    height: fit-content;
+}
+
+.inner-container {
+    margin: auto;
+    background: wheat;
+    width: 93%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    width: 100%;
+    height: fit-content;
+    background: pink;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+}
+
+.box .textwrapper {
+    background: seagreen;
+}
+
+.title {
+    background: slateblue;
+    padding: 10px;
+    margin: 10px;
+}
+
+.subtitle {
+    padding: 10px;
+    margin: 10px;
+    background: snow;
+}
+
+.description {
+    padding: 10px;
+    margin: 10px;
+    height: 80px;
+    background: tomato;
+}
