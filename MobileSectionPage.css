@@ -1,28 +1,21 @@
     body {
         background: gray;
+        margin: 0;
     }
     
     .main-container {
-        margin-left: auto;
-        margin-right: auto;
-        width: 1100px;
-        height: fit-content;
+        width: 100%;
         background: white;
     }
     
     .inner-container {
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
         width: 94%;
-        height: fit-content;
-        display: flex;
-        flex-direction: column;
     }
     
     .teaser-wrapper {
-        resize: auto;
-        margin-top: 10px;
-        width: auto;
-        height: fit-content;
+        width: 100%;
     }
     
     .teaser-wrapper img {
@@ -31,12 +24,8 @@
     }
     
     .teaser-wrapper .textwrapper {
-        resize: auto;
-        width: auto;
         padding: 16px;
         height: 200px;
-        resize: both;
-        overflow: auto;
     }
     
     .news-section-title {
