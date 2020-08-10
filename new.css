@@ -247,21 +247,11 @@ body {
     width: 94% !important;
 }
 
-.section-title-mobile {
-    font-family: gothamFont;
-    font-weight: 600;
-    font-size: 16px;
-    color: white;
-    margin-bottom: 1rem;
-    /* margin-top: 10px; */
-    background-color: #0060aa;
-    width: 100%;
-    padding: 0.5rem;
-}
-
 .section-title-mobile i {
     font-size: 20px;
 }
+
+.section-title-mobile a {}
 
 .section-title-desktop {
     display: none;
@@ -363,6 +353,7 @@ body {
     background-color: #0060aa;
     width: 100%;
     padding: 0.5rem;
+    padding-top: 15px;
 }
 
 .section-title-mobile a {
