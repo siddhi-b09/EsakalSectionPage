@@ -358,6 +358,7 @@ body {
 
 .section-title-mobile a {
     color: white;
+    margin-left: 1;
 }
 
 .right-overlap a {
