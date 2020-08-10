@@ -2,174 +2,6 @@ body {
     overflow-x: hidden;
 }
 
-.footer-first {
-    background-color: #0060aa;
-    overflow: hidden;
-}
-
-
-/* ++++++++++++++++++++++ Start Footer Icons +++++++++++++++++++++++++++++++++ */
-
-.f-envelope {
-    position: relative;
-}
-
-.f-envelope::before {
-    content: "";
-    background-image: url(https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/icons/footer/svg/mail.svg);
-    background-size: 15px 15px;
-    height: 15px;
-    width: 15px;
-    display: inline-block;
-    position: absolute;
-    left: -21px;
-    top: -3px;
-}
-
-.f-phone {
-    position: relative;
-}
-
-.f-phone::before {
-    content: "";
-    background-image: url(https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/icons/footer/svg/call.svg);
-    background-size: 15px 15px;
-    height: 15px;
-    width: 15px;
-    display: inline-block;
-    position: absolute;
-    left: -21px;
-    top: -3px;
-}
-
-.f-pencil {
-    position: relative;
-}
-
-.f-pencil::before {
-    content: "";
-    background-image: url(https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/icons/footer/svg/pencil.svg);
-    background-size: 15px 15px;
-    height: 15px;
-    width: 15px;
-    display: inline-block;
-    position: absolute;
-    left: -21px;
-    top: -3px;
-}
-
-.f-book {
-    position: relative;
-}
-
-.f-book::before {
-    content: "";
-    background-image: url(https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/icons/footer/svg/book.svg);
-    background-size: 15px 15px;
-    height: 15px;
-    width: 15px;
-    display: inline-block;
-    position: absolute;
-    left: -21px;
-    top: -3px;
-}
-
-.f-box {
-    position: relative;
-}
-
-.f-box::before {
-    content: "";
-    background-image: url(https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/icons/footer/svg/box.svg);
-    background-size: 15px 15px;
-    height: 15px;
-    width: 15px;
-    display: inline-block;
-    position: absolute;
-    left: -21px;
-    top: -3px;
-}
-
-.f-cap {
-    position: relative;
-}
-
-.f-cap::before {
-    content: "";
-    background-image: url(https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/icons/footer/svg/graduation.svg);
-    background-size: 15px 15px;
-    height: 15px;
-    width: 15px;
-    display: inline-block;
-    position: absolute;
-    left: -21px;
-    top: -3px;
-}
-
-.f-headphone {
-    position: relative;
-}
-
-.f-headphone::before {
-    content: "";
-    background-image: url(https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/icons/footer/svg/headphone.svg);
-    background-size: 15px 15px;
-    height: 15px;
-    width: 15px;
-    display: inline-block;
-    position: absolute;
-    left: -21px;
-    top: -3px;
-}
-
-.f-medal {
-    position: relative;
-}
-
-.f-medal::before {
-    content: "";
-    background-image: url(https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/icons/footer/svg/reward.svg);
-    background-size: 15px 15px;
-    height: 15px;
-    width: 15px;
-    display: inline-block;
-    position: absolute;
-    left: -21px;
-    top: -3px;
-}
-
-.f-bank {
-    position: relative;
-}
-
-.f-bank::before {
-    content: "";
-    background-image: url(https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/icons/footer/svg/bank.svg);
-    background-size: 15px 15px;
-    height: 15px;
-    width: 15px;
-    display: inline-block;
-    position: absolute;
-    left: -21px;
-    top: -3px;
-}
-
-.f-cube {
-    position: relative;
-}
-
-.f-cube::before {
-    content: "";
-    background-image: url(https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/icons/footer/svg/cube.svg);
-    background-size: 15px 15px;
-    height: 15px;
-    width: 15px;
-    display: inline-block;
-    position: absolute;
-    left: -21px;
-    top: -3px;
-}
-
 
 /* ++++++++++++++++++++++ End Footer Icons +++++++++++++++++++++++++++++++++ */
 
@@ -356,7 +188,7 @@ body {
     .news-description {
         font-size: 14px !important;
         -webkit-line-clamp: 4 !important;
-        max-height: 72px !important;
+        max-height: 70px !important;
     }
     .news-section-title {
         width: fit-content;
@@ -569,145 +401,6 @@ body {
     color: black;
 }
 
-
-/* ================================= footer-top ================================= */
-
-.footer-top {
-    background-color: white;
-}
-
-.footer-menu ul {
-    font-size: 14px;
-    color: black;
-    list-style-type: none;
-}
-
-.footer-top li {
-    margin: 0.5rem 0.2rem 0 0.2rem;
-}
-
-.footer-top li:last-child {
-    margin-bottom: 0.5rem;
-}
-
-.footer-top li a {
-    margin: 0px 0.5rem;
-    font-family: gothamFont;
-}
-
-.footer-top li span {
-    margin: 0px 0.5rem;
-    font-family: gothamFont;
-}
-
-
-/* ================================= footer-bottom =================================  */
-
-.footer-bottom {
-    background-color: #e3e3e3;
-    padding-bottom: 40px;
-}
-
-.footer-links-div {
-    width: 100%;
-}
-
-.footer-links-div ul li {
-    color: #5d5d60;
-    font-size: 14px !important;
-}
-
-.footer-links-div ul li::before {
-    display: inline-block;
-    content: '';
-    height: 0.25rem;
-    width: 0.25rem;
-    margin-right: 0.2rem;
-    margin-bottom: 0.1rem;
-    background-color: #5d5d60;
-}
-
-
-/* ================================= footer copyright ================================= */
-
-.copyright {
-    background-color: #0060aa !important;
-}
-
-.sakal-logo-bottom-footer {
-    background-image: url(https://sankey-bucket.s3-ap-southeast-1.amazonaws.com/logo3.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 240px;
-    width: 150px;
-    height: 45px;
-    margin-top: 17px;
-    margin-bottom: 16px;
-}
-
-.copyright-text.news-description {
-    color: white;
-    font-size: 14px !important;
-    font-family: gothamFont;
-}
-
-.copyright-text.news-description a {
-    font-family: inherit;
-    color: white;
-}
-
-.social-icon {
-    border: 2px solid white;
-    width: 35px;
-    height: 35px;
-    margin: 5px 7px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 17px;
-}
-
-.social-icon-img {
-    width: 100%;
-    height: 100%;
-    padding: 7px;
-}
-
-.go-top-box {
-    width: 115px;
-    display: inline-block;
-    background-color: lightgray;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 14px;
-}
-
-.fa-social-custom {
-    padding: 4px;
-    font-size: 15px;
-    color: white;
-}
-
-.sakal-logo-footer-box .grey-line {
-    width: 85%;
-    height: 2px;
-    border-top: none !important;
-    background-image: radial-gradient( white, transparent);
-}
-
-.grey-line {
-    width: 60%;
-    border-top: 1px solid grey;
-}
-
-.entertainment .section-title-mobile {
-    background-color: #e15e07;
-}
-
-.copy-pad {
-    padding: 30px 0px 25px 0px;
-}
-
 @media (min-width: 768px) {
     /* ================================= video-story ================================= */
     .section-title-desktop {
@@ -823,58 +516,6 @@ body {
     .main-video .news-description {
         font-size: 15px;
     }
-    /* ================================= footer-top ================================= */
-    .footer-menu ul {
-        font-size: 14px;
-        -webkit-font-smoothing: antialiased !important;
-        text-shadow: 0px 0px 0px #b5b5b5!important;
-    }
-    .footer-top li {
-        margin: 0.5rem 1rem 0 1rem;
-    }
-    .footer-top li:last-child {
-        margin-bottom: 0.5rem;
-    }
-    /* ================================= footer-bottom ================================= */
-    .footer-bottom {
-        background-color: white;
-    }
-    .footer-logo-div {
-        background-image: url(https://sankey-bucket.s3-ap-southeast-1.amazonaws.com/Sakal.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 150%;
-        width: 225px;
-        height: 70px;
-        margin: 30px 0px 25px 0px;
-    }
-    .footer-breadcrumbs-container {
-        width: 83%;
-        border-top: 1px solid #d9d9d9;
-        border-bottom: 1px solid #d9d9d9;
-        font-size: 16px;
-        color: #5d5d60;
-        text-shadow: 0.1px 0.1px;
-        padding-top: 18px;
-        padding-bottom: 15.5px;
-    }
-    .grey-line {
-        display: none;
-    }
-    .footer-links-div {
-        width: 75%;
-    }
-    .footer-links-div ul li {
-        font-size: 19px !important;
-        text-shadow: 0.1px 0.1px;
-    }
-    .footer-links-div ul li::before {
-        -webkit-border-radius: 0.5rem;
-        border-radius: 0.5rem;
-        height: 0.5rem;
-        width: 0.5rem;
-        margin-right: 0.5rem;
-    }
     /* ====================== from 786 to 820 =================== */
     .our-services-div {
         width: 15%;
@@ -964,6 +605,7 @@ body {
 
 .teaser-wrapper {
     width: 100%;
+    height: fit-content;
 }
 
 .teaser-wrapper img {
@@ -974,7 +616,8 @@ body {
 .teaser-wrapper .textwrapper {
     padding-top: 10px;
     padding-right: 15px;
-    height: 150px;
+    padding-bottom: 10px;
+    height: fit-content;
 }
 
 .section-title-mobile {
