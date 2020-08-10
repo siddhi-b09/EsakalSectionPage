@@ -1,0 +1,131 @@
+body {
+    background: gray;
+    overflow-x: hidden;
+}
+
+.main-container {
+    display: flex;
+    width: 1100px;
+    background: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inner-container {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 94%;
+}
+
+.upper-story-block {
+    width: 70%;
+    background: hotpink;
+    height: 400px;
+}
+
+.ad-block {
+    width: 29%;
+    background: khaki;
+    height: 400px;
+}
+
+.row-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lower-story-block {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    width: 100%;
+    height: 200px;
+    border-bottom: 2px solid gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mid-story-block {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    width: 70%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.end-story-block {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.image-block {
+    width: 300px;
+    height: 100%;
+    background-image: url("https://media1.faz.net/ppmedia/aktuell/4246489303/1.6874237/article_teaser_top2/der-tuerkische-praesident.jpg");
+}
+
+.mid-ad-block {
+    width: 100%;
+    background: khaki;
+    height: 200px;
+    margin-top: 5px;
+}
+
+.end-ad-block {
+    width: 19%;
+    background: khaki;
+    margin-top: 15px;
+    height: 360px;
+}
+
+.text-block {
+    width: 69%;
+    padding-right: 20px;
+}
+
+.mid-text-block {
+    width: 62%;
+    padding-right: 20px;
+}
+
+.news-title {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #0060aa;
+    width: fit-content;
+}
+
+.news-description {
+    padding-top: 10px;
+    font-size: 20px;
+    line-height: 1.3;
+    color: #7b7a7a;
+    overflow: hidden;
+    font-weight: 500;
+    text-overflow: clip;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    max-height: 60%;
+    text-align: justify;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.mid-container {
+    width: 80%;
+    height: auto;
+}
