@@ -285,7 +285,6 @@ img {
 }
 
 .view-holder .view {
-    margin: 0;
     position: absolute;
     top: 70%;
     left: 50%;
@@ -465,8 +464,14 @@ img {
     .news-block {
         padding-bottom: 20px;
     }
+    .news-block .news-description {
+        height: 40px;
+    }
     .video-section-ad-block {
         margin: 0px 0px 0px 0px;
+    }
+    .view-holder .view {
+        margin-top: -5px;
     }
 }
 
