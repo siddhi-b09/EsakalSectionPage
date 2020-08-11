@@ -3,6 +3,25 @@ body {
     overflow-x: hidden;
 }
 
+
+/* ================================= common ================================= */
+
+@font-face {
+    font-family: 'sakalfont';
+    font-display: swap;
+    src: url(https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/font/EkMukta-Regular.ttf) format("truetype"), url(https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/font/EkMukta-Regular.eot) format("eot"), url(https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/font/EkMukta-Regular.svg) format("svg");
+}
+
+@font-face {
+    font-family: 'sakalfontbold';
+    font-display: swap;
+    src: url(https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/font/EkMukta-Bold.ttf) format("truetype");
+}
+
+* {
+    font-family: sakalfont;
+}
+
 .main-container {
     display: flex;
     width: 970px;
@@ -118,7 +137,7 @@ body {
 
 .image-text-block .news-description {
     color: white;
-    max-height: 68px;
+    max-height: 66px;
 }
 
 .news-title {
@@ -130,7 +149,7 @@ body {
 }
 
 .news-description {
-    padding-top: 10px;
+    padding: 10px 10px 10px 0px;
     font-size: 23px;
     line-height: 1.3;
     color: #7b7a7a;
@@ -141,7 +160,7 @@ body {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     text-align: justify;
-    height: fit-content;
+    max-height: 95px;
 }
 
 img {
