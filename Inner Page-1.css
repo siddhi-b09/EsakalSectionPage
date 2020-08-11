@@ -27,7 +27,7 @@ body {
 
 .ad-block {
     width: 29%;
-    background: khaki;
+    background: red;
     height: 400px;
 }
 
@@ -38,7 +38,7 @@ body {
 }
 
 .lower-story-block {
-    padding: 15px 0px 15px 0px;
+    padding: 20px 0px 20px 0px;
     width: 100%;
     height: 200px;
     border-bottom: 1px solid gray;
@@ -52,8 +52,7 @@ body {
 }
 
 .mid-story-block {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 20px 0px 20px 0px;
     width: 100%;
     height: 200px;
     display: flex;
@@ -62,8 +61,7 @@ body {
 }
 
 .end-story-block {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 20px 0px 20px 0px;
     width: 100%;
     height: 200px;
     border-top: 1px solid gray;
@@ -80,14 +78,14 @@ body {
 
 .mid-ad-block {
     width: 100%;
-    background: khaki;
+    background: red;
     height: 200px;
     margin-top: 5px;
 }
 
 .end-ad-block {
     width: 19%;
-    background: khaki;
+    background: red;
     margin-top: 15px;
     height: 360px;
 }
