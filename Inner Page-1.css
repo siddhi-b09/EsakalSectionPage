@@ -80,7 +80,7 @@ body {
     width: 100%;
     background: red;
     height: 200px;
-    margin-top: 5px;
+    margin: 5px 0px 5px 0px;
 }
 
 .end-ad-block {
