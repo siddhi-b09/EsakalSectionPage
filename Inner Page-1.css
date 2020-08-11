@@ -163,7 +163,7 @@ img {
 .upper-container {
     display: flex;
     flex-direction: row;
-    width: fit-content;
+    width: 1270px;
     margin-left: auto;
     margin-right: auto;
     background: white;
