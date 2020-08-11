@@ -283,5 +283,25 @@ img {
     width: 100%;
     background: red;
     height: 150px;
-    margin-top: -20px;
+    margin: -20px 0px 10px 0px;
+}
+
+.video-text-block {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 280px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.video-text-block .news-title {
+    color: white;
+    font-size: 30px;
+}
+
+.video-text-block .news-description {
+    color: white;
+    max-height: 66px;
 }
