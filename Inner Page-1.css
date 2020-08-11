@@ -398,14 +398,14 @@ img {
         max-width: 100%;
         flex-flow: wrap;
         height: 350px;
-        margin: 10px 0px 10px 0px;
+        margin: 0px 0px 0px 0px;
         box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.2);
     }
     .end-story-block {
         max-width: 100%;
         flex-flow: wrap;
         height: 350px;
-        margin: 10px 0px 10px 0px;
+        margin: 30px 0px 30px 0px;
         box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.2);
     }
     .image-block {
@@ -426,7 +426,7 @@ img {
     .mid-ad-block {
         width: 100%;
         height: 100px;
-        margin: 10px 0px 10px 0px;
+        margin: 10px 0px 30px 0px;
         background-image: url("https://gkalpesh.github.io/sakalpages/images/Screenshot (52).png");
     }
     .mid-container {
@@ -435,6 +435,7 @@ img {
     }
     .mid-row {
         width: 100%;
+        margin-top: -10px;
     }
     .end-ad-block {
         display: none;
