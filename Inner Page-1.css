@@ -233,7 +233,7 @@ img {
     flex-direction: row;
     justify-content: space-between;
     padding: 10px 0px 10px 0px;
-    height: 500px;
+    height: 400px;
     width: 100%;
 }
 
@@ -241,22 +241,23 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0px 0px 10px 0px;
     height: 100%;
     width: 100%;
-    background: #0060aa;
+}
+
+.news-section:nth-child(2) {
+    padding: 0px 20px 0px 20px;
 }
 
 .video-block {
-    width: 300px;
+    width: 100%;
     height: 50%;
     background-color: #484848;
 }
 
 .news-block {
-    width: 300px;
-    height: fit-content;
-    background-color: yellowgreen;
+    width: 100%;
+    height: 50%;
     text-align: center;
     padding: 10px 30px 30px 30px;
     position: relative;
@@ -285,7 +286,7 @@ img {
     background: black;
     color: white;
     position: absolute;
-    left: 100px;
+    left: 110px;
     top: 110px;
     border-radius: 5px;
 }
@@ -293,8 +294,8 @@ img {
 .video-section-ad-block {
     width: 100%;
     background: red;
-    height: 150px;
-    margin: -20px 0px 10px 0px;
+    height: 100px;
+    margin: 10px 0px 10px 0px;
     background-image: url("https://gkalpesh.github.io/sakalpages/images/Screenshot (52).png");
 }
 
@@ -427,6 +428,35 @@ img {
     }
     .end-ad-block {
         display: none;
+    }
+    .video-text-block {
+        width: 100%;
+        top: 160px;
+        position: absolute;
+        top: 240px;
+    }
+    .video-section {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+    .news-section {
+        width: 100%;
+        height: 400px;
+    }
+    .news-section:nth-child(2) {
+        padding: 0px 0px 0px 0px;
+    }
+    .video-block {
+        width: 100%;
+        height: 60%;
+        background-color: #484848;
+    }
+    .news-block {
+        padding-bottom: 20px;
+    }
+    .video-section-ad-block {
+        margin: 0px 0px 0px 0px;
     }
 }
 
