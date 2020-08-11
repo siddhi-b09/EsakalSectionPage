@@ -1,0 +1,102 @@
+   body {
+       background: gray;
+       margin: 0;
+   }
+   
+   .main-container {
+       width: 100%;
+       background: white;
+   }
+   
+   .inner-container {
+       margin-left: auto;
+       margin-right: auto;
+       width: 94%;
+   }
+   
+   .teaser-wrapper {
+       width: 100%;
+   }
+   
+   .teaser-wrapper img {
+       width: 100%;
+       height: auto;
+   }
+   
+   .teaser-wrapper .textwrapper {
+       padding-right: 15px;
+       height: 300px;
+   }
+   
+   .news-section-title {
+       width: auto;
+       overflow: auto;
+       font-size: 11px;
+       font-weight: bold;
+       line-height: 1.1;
+       color: #0060aa;
+       width: auto;
+       padding-bottom: 5px;
+       padding-top: 15px;
+   }
+   
+   .news-title {
+       /* font-family: sakalfontbold; */
+       width: auto;
+       font-size: 16px;
+       font-weight: 600;
+       line-height: 1.5;
+       color: black;
+       overflow: hidden;
+       text-overflow: clip;
+       display: -webkit-box;
+       -webkit-line-clamp: 2;
+       -webkit-box-orient: vertical;
+       max-height: 41px;
+       /* height: 41px; */
+       width: auto;
+       padding-bottom: 15px;
+   }
+   
+   .news-description {
+       width: auto;
+       font-size: 14px;
+       line-height: 1.3;
+       color: #7b7a7a;
+       overflow: hidden;
+       font-weight: 500;
+       text-overflow: clip;
+       display: -webkit-box;
+       -webkit-line-clamp: 3;
+       -webkit-box-orient: vertical;
+       text-align: justify;
+       height: 100px;
+       max-height: 72px;
+   }
+   
+   .photography {
+       background-image: url(https://composeclick.com/wp-content/uploads/2018/05/nature-1-1024x637.jpg);
+       background-repeat: no-repeat;
+       background-size: 100% 55%;
+       height: 360px;
+   }
+   
+   .section-title-mobile {
+       font-family: gothamFont;
+       font-weight: 600;
+       font-size: 16px;
+       color: white;
+       margin-bottom: 1rem;
+       /* margin-top: 10px; */
+       background-color: #0060aa;
+       width: 100%;
+       padding: 0.5rem;
+   }
+   
+   .news-box-container {
+       width: 68%;
+   }
+   
+   .d-inline-block {
+       display: inline-block!important;
+   }
