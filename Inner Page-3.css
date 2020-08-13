@@ -1,0 +1,350 @@
+body {
+    background: #DCDCDC;
+    overflow-x: hidden;
+}
+
+
+/* ================================= common ================================= */
+
+@font-face {
+    font-family: 'sakalfont';
+    font-display: swap;
+    src: url(https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/font/EkMukta-Regular.ttf) format("truetype"), url(https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/font/EkMukta-Regular.eot) format("eot"), url(https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/font/EkMukta-Regular.svg) format("svg");
+}
+
+@font-face {
+    font-family: 'sakalfontbold';
+    font-display: swap;
+    src: url(https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/font/EkMukta-Bold.ttf) format("truetype");
+}
+
+* {
+    font-family: sakalfont;
+}
+
+.main-container {
+    display: flex;
+    width: 970px;
+    background: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inner-container {
+    padding: 0px 10px 10px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.news-container {
+    width: 1270px;
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.upper-container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    width: 1270px;
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-footer-block {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1270px;
+    height: 50px;
+    background: #0060aa;
+    font-weight: bold;
+    text-align: center;
+}
+
+.side-ad-block {
+    width: 150px;
+    height: 550px;
+    background: peru;
+    background-image: url("https://gkalpesh.github.io/sakalpages/images/Screenshot (52).png");
+}
+
+
+/* ================================= Video Story Section ================================= */
+
+.upper-story-block {
+    width: 70%;
+    background: #484848;
+    height: 400px;
+    position: relative;
+}
+
+.upper-story-block img {
+    width: 100%;
+    height: 100%;
+}
+
+.ad-block {
+    width: 29%;
+    background: red;
+    height: 400px;
+    background-image: url("https://gkalpesh.github.io/sakalpages/images/Screenshot (52).png");
+}
+
+.side-ad-block {
+    width: 150px;
+    height: 550px;
+    background: peru;
+    background-image: url("https://gkalpesh.github.io/sakalpages/images/Screenshot (52).png");
+}
+
+.row-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.image-text-block {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 210px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.image-text-block .news-title {
+    color: white;
+}
+
+.image-text-block .news-description {
+    color: white;
+    max-height: 63px;
+}
+
+.news-title {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #0060aa;
+    width: fit-content;
+}
+
+.news-description {
+    font-size: 23px;
+    line-height: 1.3;
+    color: #7b7a7a;
+    overflow: hidden;
+    font-weight: 500;
+    text-overflow: clip;
+    text-align: justify;
+    max-height: 100px;
+    width: 100%;
+}
+
+.video-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0px 10px 0px;
+    height: 400px;
+    width: 100%;
+}
+
+.news-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+.news-section:nth-child(2) {
+    padding: 0px 20px 0px 20px;
+}
+
+.video-block {
+    width: 100%;
+    height: 180px;
+    background-color: #484848;
+}
+
+.video-block img {
+    width: 100%;
+    height: 100%;
+}
+
+.news-block {
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    position: relative;
+}
+
+.news-title1 {
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    font-weight: 400;
+    width: 100%;
+}
+
+.news-block .news-description {
+    font-size: 18px;
+    color: black;
+    max-height: 45px;
+    text-align: center;
+    width: fit-content;
+    padding: 0px 20px 0px 20px;
+}
+
+.view-holder {
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+}
+
+.view-holder .view {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.view {
+    width: fit-content;
+    padding: 10px 30px 10px 30px;
+    font-weight: bold;
+    background: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.video-section-ad-block {
+    width: 100%;
+    background: red;
+    height: 100px;
+    margin: 15px 0px 10px 0px;
+    background-image: url("https://gkalpesh.github.io/sakalpages/images/Screenshot (52).png");
+}
+
+.video-text-block {
+    width: 50%;
+    height: 30%;
+    position: absolute;
+    top: 280px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.video-text-block .news-title {
+    color: white;
+    font-size: 30px;
+}
+
+.video-text-block .news-description {
+    color: white;
+    max-height: 58px;
+}
+
+
+/* ================================= Media Quries ================================= */
+
+@media (max-width: 768px) {
+    .upper-container {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        height: fit-content;
+    }
+    .main-container {
+        width: 100%;
+        height: fit-content;
+    }
+    .inner-container {
+        padding: 0px 10px 10px 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: fit-content;
+    }
+    .header-footer-block {
+        width: 100%;
+    }
+    .side-ad-block {
+        display: none;
+    }
+    .row-1 div:nth-of-type(1) {
+        flex-grow: 2;
+    }
+    .ad-block {
+        display: none;
+    }
+    .news-title {
+        font-size: 30px !important;
+        font-weight: 600;
+        -webkit-line-clamp: 2;
+        max-height: 46px;
+        line-height: 1.5;
+    }
+    .news-description {
+        font-size: 16px !important;
+        -webkit-line-clamp: 4 !important;
+        max-height: 65px !important;
+    }
+    .upper-story-block {
+        width: 100%;
+        height: 320px;
+    }
+    .image-text-block {
+        width: 100%;
+        top: 140px;
+    }
+    .video-text-block {
+        width: 100%;
+        position: absolute;
+        top: 230px;
+    }
+    .video-section {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+    .news-section {
+        width: 100%;
+        height: 400px;
+    }
+    .news-section:nth-child(2) {
+        padding: 0px 0px 0px 0px;
+    }
+    .video-block {
+        width: 100%;
+        height: 220px;
+        background-color: #484848;
+    }
+    .news-block {
+        padding-bottom: 20px;
+    }
+    .news-block .news-description {
+        height: 39px;
+        padding: 0px 20px 0px 20px;
+    }
+    .video-text-block .news-description {
+        color: white;
+        max-height: 65px;
+        width: 90%;
+    }
+    .video-section-ad-block {
+        margin: 0px 0px 0px 0px;
+    }
+    .view-holder .view {
+        margin-top: -5px;
+    }
+}
+
+
+/* ================================== media queries to adjust container size ========================= */
