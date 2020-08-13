@@ -281,7 +281,7 @@ body {
 .news-block .news-description {
     font-size: 18px;
     color: black;
-    max-height: 70px;
+    max-height: 45px;
     text-align: center;
     width: fit-content;
     padding: 0px 20px 0px 20px;
@@ -576,7 +576,7 @@ body {
         padding-bottom: 20px;
     }
     .news-block .news-description {
-        height: 59px;
+        height: 39px;
     }
     .video-text-block .news-description {
         color: white;
