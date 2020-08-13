@@ -577,6 +577,7 @@ body {
     }
     .news-block .news-description {
         height: 39px;
+        padding: 0px 20px 0px 20px;
     }
     .video-text-block .news-description {
         color: white;
