@@ -214,13 +214,14 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.view {
+.view a {
     width: fit-content;
     padding: 10px 30px 10px 30px;
     font-weight: bold;
     background: black;
     color: white;
     border-radius: 5px;
+    text-decoration: none;
 }
 
 .video-section-ad-block {

@@ -161,7 +161,7 @@ body {
     justify-content: center;
 }
 
-.view2 {
+.view2 a {
     background: black;
     color: white;
     padding: 5px 30px 0px 30px;
@@ -172,6 +172,7 @@ body {
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-decoration: none;
 }
 
 .aarti-video-section {
