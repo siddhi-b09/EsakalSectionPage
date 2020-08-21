@@ -94,6 +94,8 @@
         
         .main-container {
             background: white;
+            margin-left: auto;
+            margin-right: auto;
             width: 100%;
             height: fit-content;
         }
@@ -118,7 +120,8 @@
             font-weight: 600;
             -webkit-line-clamp: 2;
             max-height: 46px;
-            line-height: 1.5;
+            line-height: 1.3;
+            padding: 5px 5px 5px 0px;
         }
         
         .news-description {
@@ -144,7 +147,7 @@
         
         .photography-section {
             width: 100%;
-            height: 360px;
+            height: 100%;
             padding: 10px 0px 10px 0px;
         }
         
@@ -154,16 +157,16 @@
         }
         
         .photography-content-block {
-            padding: 20px;
+            padding: 10px;
             background: white;
             position: absolute;
-            bottom: 10px;
+            bottom: 0px;
             left: 35px;
         }
         
         .blank {
             width: 100%;
-            height: 130px;
+            height: 90px;
             position: relative;
         }
         
@@ -178,30 +181,35 @@
             height: fit-content;
             display: flex;
             flex-direction: row;
-            margin: 0px 10px 15px 0px;
+            align-items: center;
+            padding: 10px 0px 10px 0px;
         }
         
         .image-block {
-            height: 90px;
+            height: 100%;
             width: 35%;
-            padding: 5px 0px 5px 0px;
         }
         
         .content-block {
             width: 70%;
-            padding: 10px;
+            height: 100%;
+            padding: 10px 10px 0px 10px;
+        }
+        
+        .content-block .news-title {
+            max-height: min-content;
         }
         
         .news-block2 {
             width: 100%;
-            height: fit-content;
+            height: 100%;
             display: flex;
             flex-direction: column;
             padding: 10px 10px 10px 0px;
         }
         
         .image-block2 {
-            height: 200px;
+            height: 100%;
             width: 100%;
         }
         
@@ -259,7 +267,7 @@
             <div class="news-box-container">
                 <div class="news-block">
                     <div class="image-block">
-                        <amp-img src="1.jpeg " layout="responsive" width="100" height="90"></amp-img>
+                        <amp-img src="1.jpeg " layout="responsive" width="110" height="95"></amp-img>
                     </div>
 
                     <div class="content-block">
@@ -273,7 +281,7 @@
 
                 <div class="news-block">
                     <div class="image-block">
-                        <amp-img src="https://sankeyimages.sakalmediagroup.com/sankey_esakal/s3fs-public/styles/generic_md_75/public/corona.jpg?uj7Kr74AYeW.gA6JLJ7Rs9YD8NvOPKT8&amp;itok=nuyn6K0d" layout="responsive" width="100" height="90"></amp-img>
+                        <amp-img src="2.jpeg " layout="responsive" width="110" height="95"></amp-img>
                     </div>
 
                     <div class="content-block">
@@ -287,7 +295,7 @@
 
                 <div class="news-block">
                     <div class="image-block">
-                        <amp-img src="https://sankeyimages.sakalmediagroup.com/sankey_esakal/s3fs-public/styles/generic_md_75/public/demo.jpg?Xy3xn807XRuGxdE3h8c82aoMfmws61G.&itok=XO5CL54h" layout="responsive" width="100" height="90"></amp-img>
+                        <amp-img src="3.jpeg " layout="responsive" width="110" height="95"></amp-img>
                     </div>
 
                     <div class="content-block">
@@ -301,7 +309,7 @@
 
                 <div class="news-block">
                     <div class="image-block">
-                        <amp-img src="https://sankeyimages.sakalmediagroup.com/sankey_esakal/s3fs-public/styles/generic_md_75/public/2Praniti_20Shinde_20Congress_20Solapur_0.jpg?C61diL_ZRfGyxe3asGM_wso8.v8wVmox&itok=ll0CpNd_" layout="responsive" width="100" height="90"></amp-img>
+                        <amp-img src="4.jpeg " layout="responsive" width="110" height="95"></amp-img>
                     </div>
 
                     <div class="content-block">
@@ -318,7 +326,7 @@
             <!-- start section 3-->
             <div class="news-block2">
                 <div class="image-block2">
-                    <amp-img src="https://sankeyimages.sakalmediagroup.com/sankey_esakal/s3fs-public/styles/generic_md_75/public/2Praniti_20Shinde_20Congress_20Solapur_0.jpg?C61diL_ZRfGyxe3asGM_wso8.v8wVmox&itok=ll0CpNd_" layout="responsive" width="350" height="200"></amp-img>
+                    <amp-img src="4.jpeg " layout="responsive" width="350" height="200"></amp-img>
                 </div>
                 <div class="content-block">
                     <div class="news-section-title">इंटरनेट</div>
@@ -333,7 +341,7 @@
 
             <div class="news-block2">
                 <div class="image-block2">
-                    <amp-img src="https://sankeyimages.sakalmediagroup.com/sankey_esakal/s3fs-public/styles/generic_md_75/public/2Praniti_20Shinde_20Congress_20Solapur_0.jpg?C61diL_ZRfGyxe3asGM_wso8.v8wVmox&itok=ll0CpNd_" layout="responsive" width="350" height="200"></amp-img>
+                    <amp-img src="2.jpeg " layout="responsive" width="350" height="200"></amp-img>
                 </div>
                 <div class="content-block">
                     <div class="news-section-title">इंटरनेट</div>
@@ -348,7 +356,7 @@
 
             <div class="news-block2">
                 <div class="image-block2">
-                    <amp-img src="https://sankeyimages.sakalmediagroup.com/sankey_esakal/s3fs-public/styles/generic_md_75/public/2Praniti_20Shinde_20Congress_20Solapur_0.jpg?C61diL_ZRfGyxe3asGM_wso8.v8wVmox&itok=ll0CpNd_" layout="responsive" width="350" height="200"></amp-img>
+                    <amp-img src="3.jpeg " layout="responsive" width="350" height="200"></amp-img>
                 </div>
                 <div class="content-block">
                     <div class="news-section-title">इंटरनेट</div>
@@ -363,7 +371,7 @@
 
             <div class="news-block2">
                 <div class="image-block2">
-                    <amp-img src="https://sankeyimages.sakalmediagroup.com/sankey_esakal/s3fs-public/styles/generic_md_75/public/2Praniti_20Shinde_20Congress_20Solapur_0.jpg?C61diL_ZRfGyxe3asGM_wso8.v8wVmox&itok=ll0CpNd_" layout="responsive" width="350" height="200"></amp-img>
+                    <amp-img src="4.jpeg " layout="responsive" width="350" height="200"></amp-img>
                 </div>
                 <div class="content-block">
                     <div class="news-section-title">इंटरनेट</div>
@@ -378,7 +386,7 @@
 
             <div class="news-block2">
                 <div class="image-block2">
-                    <amp-img src="https://sankeyimages.sakalmediagroup.com/sankey_esakal/s3fs-public/styles/generic_md_75/public/2Praniti_20Shinde_20Congress_20Solapur_0.jpg?C61diL_ZRfGyxe3asGM_wso8.v8wVmox&itok=ll0CpNd_" layout="responsive" width="350" height="200"></amp-img>
+                    <amp-img src="5.jpeg " layout="responsive" width="350" height="200"></amp-img>
                 </div>
                 <div class="content-block">
                     <div class="news-section-title">इंटरनेट</div>
@@ -428,9 +436,11 @@
 
                 <div class="news-block">
                     <div class="image-block">
-                        <amp-img src="https://sankeyimages.sakalmediagroup.com/sankey_esakal/s3fs-public/styles/generic_md_75/public/corona.jpg?uj7Kr74AYeW.gA6JLJ7Rs9YD8NvOPKT8&amp;itok=nuyn6K0d" layout="responsive" width="100" height="90"></amp-img>
+                        <amp-img src="2.jpeg " layout="responsive" width="110" height="95"></amp-img>
                     </div>
+
                     <div class="content-block">
+                        <div class="news-section-title">इंटरनेट</div>
                         <div class="news-title">
                             रूप में उपलब्ध हैं, लेकिन बहुमत को किसी अन्य रूप में परिवर्तन का
                         </div>
@@ -440,9 +450,11 @@
 
                 <div class="news-block">
                     <div class="image-block">
-                        <amp-img src="https://sankeyimages.sakalmediagroup.com/sankey_esakal/s3fs-public/styles/generic_md_75/public/demo.jpg?Xy3xn807XRuGxdE3h8c82aoMfmws61G.&itok=XO5CL54h" layout="responsive" width="100" height="90"></amp-img>
+                        <amp-img src="3.jpeg " layout="responsive" width="110" height="95"></amp-img>
                     </div>
+
                     <div class="content-block">
+                        <div class="news-section-title">इंटरनेट</div>
                         <div class="news-title">
                             रूप में उपलब्ध हैं, लेकिन बहुमत को किसी अन्य रूप में परिवर्तन का
                         </div>
@@ -452,9 +464,11 @@
 
                 <div class="news-block">
                     <div class="image-block">
-                        <amp-img src="https://sankeyimages.sakalmediagroup.com/sankey_esakal/s3fs-public/styles/generic_md_75/public/2Praniti_20Shinde_20Congress_20Solapur_0.jpg?C61diL_ZRfGyxe3asGM_wso8.v8wVmox&itok=ll0CpNd_" layout="responsive" width="100" height="90"></amp-img>
+                        <amp-img src="4.jpeg " layout="responsive" width="110" height="95"></amp-img>
                     </div>
+
                     <div class="content-block">
+                        <div class="news-section-title">इंटरनेट</div>
                         <div class="news-title">
                             रूप में उपलब्ध हैं, लेकिन बहुमत को किसी अन्य रूप में परिवर्तन का
                         </div>
@@ -462,6 +476,7 @@
                     </div>
                 </div>
             </div>
+
         </section>
         <!-- end section 4-->
 
@@ -496,12 +511,13 @@
                     </div>
                 </div>
 
-
                 <div class="news-block">
                     <div class="image-block">
-                        <amp-img src="https://sankeyimages.sakalmediagroup.com/sankey_esakal/s3fs-public/styles/generic_md_75/public/corona.jpg?uj7Kr74AYeW.gA6JLJ7Rs9YD8NvOPKT8&amp;itok=nuyn6K0d" layout="responsive" width="100" height="90"></amp-img>
+                        <amp-img src="2.jpeg " layout="responsive" width="110" height="95"></amp-img>
                     </div>
+
                     <div class="content-block">
+                        <div class="news-section-title">इंटरनेट</div>
                         <div class="news-title">
                             रूप में उपलब्ध हैं, लेकिन बहुमत को किसी अन्य रूप में परिवर्तन का
                         </div>
@@ -511,9 +527,11 @@
 
                 <div class="news-block">
                     <div class="image-block">
-                        <amp-img src="https://sankeyimages.sakalmediagroup.com/sankey_esakal/s3fs-public/styles/generic_md_75/public/demo.jpg?Xy3xn807XRuGxdE3h8c82aoMfmws61G.&itok=XO5CL54h" layout="responsive" width="100" height="90"></amp-img>
+                        <amp-img src="3.jpeg " layout="responsive" width="110" height="95"></amp-img>
                     </div>
+
                     <div class="content-block">
+                        <div class="news-section-title">इंटरनेट</div>
                         <div class="news-title">
                             रूप में उपलब्ध हैं, लेकिन बहुमत को किसी अन्य रूप में परिवर्तन का
                         </div>
@@ -523,22 +541,23 @@
 
                 <div class="news-block">
                     <div class="image-block">
-                        <amp-img src="https://sankeyimages.sakalmediagroup.com/sankey_esakal/s3fs-public/styles/generic_md_75/public/2Praniti_20Shinde_20Congress_20Solapur_0.jpg?C61diL_ZRfGyxe3asGM_wso8.v8wVmox&itok=ll0CpNd_" layout="responsive" width="100" height="90"></amp-img>
+                        <amp-img src="4.jpeg " layout="responsive" width="110" height="95"></amp-img>
                     </div>
+
                     <div class="content-block">
+                        <div class="news-section-title">इंटरनेट</div>
                         <div class="news-title">
                             रूप में उपलब्ध हैं, लेकिन बहुमत को किसी अन्य रूप में परिवर्तन का
                         </div>
                         <div class="news-footer">13 Jul 2020 </div>
                     </div>
                 </div>
-
             </div>
         </section>
         <!-- end section 5-->
-
-
     </div>
+
+
 </body>
 
 </html>
