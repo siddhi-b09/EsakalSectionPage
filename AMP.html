@@ -10,6 +10,7 @@
 
     <title>Hello, AMPs</title>
     <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
+
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <script type="application/ld+json">
         {
@@ -77,77 +78,466 @@
     </style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
     <style amp-custom>
-        /* any custom style goes here */
-        
         body {
             background-color: gray;
-            padding: 10px;
+        }
+        
+        @font-face {
+            font-family: 'sakalfont';
+            font-display: swap;
+            src: url(https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/font/EkMukta-Regular.ttf) format("truetype"), url(https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/font/EkMukta-Regular.eot) format("eot"), url(https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/font/EkMukta-Regular.svg) format("svg");
+        }
+        
+        * {
+            font-family: sakalfont;
         }
         
         .main-container {
             background: white;
-            padding: 15px;
-        }
-        
-        amp-img {
-            background-color: gray;
-            border: 1px solid black;
-        }
-        
-        #hide {
-            font-size: 20px;
-        }
-        
-        .news-section {
+            width: 100%;
             height: fit-content;
+        }
+        
+        .inner-container {
+            margin-left: auto;
+            margin-right: auto;
+            width: 94%;
+            height: fit-content;
+        }
+        
+        .news-section-title {
+            width: fit-content;
+            font-size: 11px;
+            line-height: 1.1;
+            color: #0060aa;
+            font-weight: bold;
+        }
+        
+        .news-title {
+            font-size: 16px;
+            font-weight: 600;
+            -webkit-line-clamp: 2;
+            max-height: 46px;
+            line-height: 1.5;
+        }
+        
+        .news-description {
+            font-size: 14px;
+            line-height: 1.3;
+            color: #7b7a7a;
+            overflow: hidden;
+            font-weight: 500;
+            text-overflow: clip;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            max-height: 72px;
+            text-align: justify;
+        }
+        
+        .news-footer {
+            display: block;
+            font-size: 10px;
+            line-height: 1.2;
+            color: #7b7a7a;
+        }
+        
+        .photography-section {
+            width: 100%;
+            height: 360px;
+            padding: 10px 0px 10px 0px;
+        }
+        
+        .photography {
+            width: 100%;
+            height: fit-content;
+        }
+        
+        .photography-content-block {
+            padding: 20px;
+            background: white;
+            position: absolute;
+            bottom: 10px;
+            left: 35px;
+        }
+        
+        .blank {
+            width: 100%;
+            height: 130px;
+            position: relative;
+        }
+        
+        .news-box-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+        
+        .news-block {
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-direction: row;
+            margin: 0px 10px 15px 0px;
+        }
+        
+        .image-block {
+            height: 90px;
+            width: 35%;
+            padding: 5px 0px 5px 0px;
+        }
+        
+        .content-block {
+            width: 70%;
             padding: 10px;
+        }
+        
+        .news-block2 {
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            padding: 10px 10px 10px 0px;
+        }
+        
+        .image-block2 {
+            height: 200px;
+            width: 100%;
+        }
+        
+        .news-block2 .content-block {
+            width: 95%;
+            padding: 10px 0px 10px 0px;
+        }
+        
+        .section-title-mobile {
+            font-family: gothamFont;
+            font-weight: 600;
+            font-size: 15px;
+            color: white;
+            /* margin-bottom: 1rem;
+            margin-top: 10px; */
+            background-color: #0060aa;
+            width: 100%;
+            padding: 0.5rem;
+            align-items: center;
+        }
+        
+        .section-title-mobile a {
+            font-size: 15px;
+            color: white;
+            text-decoration: none;
         }
     </style>
 </head>
 
 <body>
     <div class="main-container">
-        <h1>Welcome to the mobile web</h1>
+        <div class="inner-container">
+            <!-- start section 1-->
 
-        <h5>NEWS_1</h5>
-        <amp-img src="1.jpeg" alt="Welcome" height="300" width="300" layout="responsive"></amp-img>
-
-        <h5>NEWS_2</h5>
-        <amp-carousel width="400" height="300" layout="responsive" type="slides">
-
-            <amp-img src="1.jpeg " width="400 " height="300 " layout="responsive " alt="a sample image "></amp-img>
-            <amp-img src="2.jpeg " width="400 " height="300 " layout="responsive " alt="another sample image "></amp-img>
-            <amp-img src="3.jpeg " width="400 " height="300 " layout="responsive " alt="and another sample image "></amp-img>
-
-        </amp-carousel>
-
-        <div class="news-section">
-            <div hidden id="hide"> News 1.....</div>
-            <button on="tap:hide.show">Read More</button>
+            <div class="photography">
+                <amp-img src="1.jpeg " layout="responsive" width="100" height="60"></amp-img>
+            </div>
+            <div class="blank">
+                <div class="photography-content-block">
+                    <div class="news-section-title">इंटरनेट</div>
+                    <div class="news-title">
+                        रूप में उपलब्ध हैं, लेकिन बहुमत को किसी अन्य रूप में परिवर्तन का
+                    </div>
+                    <div class="news-description">
+                        के एक अनुच्छेद का उपयोग करने जा रहे हैं, तो आप को यकीन दिला दें कि पाठ के मध्य में वहाँ कुछ भी शर्मनाक छिपा हुआ नहीं है. इंटरनेट पर सभी जनरेटर पूर्वनिर्धारित </div>
+                    <div class="news-footer">13 Jul 2020 </div>
+                </div>
+            </div>
         </div>
 
-        <div class="news-section">
+        <!-- end section 1-->
 
-            <amp-accordion class="sample" animate>
-                <section>
+        <!-- start section 2-->
+        <div class="inner-container">
+            <div class="news-box-container">
+                <div class="news-block">
+                    <div class="image-block">
+                        <amp-img src="1.jpeg " layout="responsive" width="100" height="90"></amp-img>
+                    </div>
 
-                    <h4>Section 1</h4>
-                    <p>Id lacus amet. Aliquam eos nunc ut scelerisque lacinia, eu rutrum id, vestibulum aliqua vivamus luctus eu rhoncus ut, sodales id. Velit lacus, fermentum neque et sagittis, ac venenatis volutpat, dolore neque feugiat proin fermentum
-                        odio, odio arcu in eu wisi. </p>
+                    <div class="content-block">
+                        <div class="news-section-title">इंटरनेट</div>
+                        <div class="news-title">
+                            रूप में उपलब्ध हैं, लेकिन बहुमत को किसी अन्य रूप में परिवर्तन का
+                        </div>
+                        <div class="news-footer">13 Jul 2020 </div>
+                    </div>
+                </div>
 
-                </section>
-                <section>
-                    <h4>Section 2</h4>
-                    <amp-img src="1.jpeg " layout="responsive" width="400" height="300"></amp-img>
+                <div class="news-block">
+                    <div class="image-block">
+                        <amp-img src="https://sankeyimages.sakalmediagroup.com/sankey_esakal/s3fs-public/styles/generic_md_75/public/corona.jpg?uj7Kr74AYeW.gA6JLJ7Rs9YD8NvOPKT8&amp;itok=nuyn6K0d" layout="responsive" width="100" height="90"></amp-img>
+                    </div>
 
-                </section>
-                <section>
-                    <h4>Section 3</h4>
-                    <p>Id lacus amet. Aliquam eos nunc ut scelerisque lacinia, eu rutrum id, vestibulum aliqua vivamus luctus eu rhoncus ut, sodales id. Velit lacus, fermentum neque et sagittis, ac venenatis volutpat, dolore neque feugiat proin fermentum
-                        odio, odio arcu in eu wisi. </p>
-                </section>
-            </amp-accordion>
+                    <div class="content-block">
+                        <div class="news-section-title">इंटरनेट</div>
+                        <div class="news-title">
+                            रूप में उपलब्ध हैं, लेकिन बहुमत को किसी अन्य रूप में परिवर्तन का
+                        </div>
+                        <div class="news-footer">13 Jul 2020 </div>
+                    </div>
+                </div>
+
+                <div class="news-block">
+                    <div class="image-block">
+                        <amp-img src="https://sankeyimages.sakalmediagroup.com/sankey_esakal/s3fs-public/styles/generic_md_75/public/demo.jpg?Xy3xn807XRuGxdE3h8c82aoMfmws61G.&itok=XO5CL54h" layout="responsive" width="100" height="90"></amp-img>
+                    </div>
+
+                    <div class="content-block">
+                        <div class="news-section-title">इंटरनेट</div>
+                        <div class="news-title">
+                            रूप में उपलब्ध हैं, लेकिन बहुमत को किसी अन्य रूप में परिवर्तन का
+                        </div>
+                        <div class="news-footer">13 Jul 2020 </div>
+                    </div>
+                </div>
+
+                <div class="news-block">
+                    <div class="image-block">
+                        <amp-img src="https://sankeyimages.sakalmediagroup.com/sankey_esakal/s3fs-public/styles/generic_md_75/public/2Praniti_20Shinde_20Congress_20Solapur_0.jpg?C61diL_ZRfGyxe3asGM_wso8.v8wVmox&itok=ll0CpNd_" layout="responsive" width="100" height="90"></amp-img>
+                    </div>
+
+                    <div class="content-block">
+                        <div class="news-section-title">इंटरनेट</div>
+                        <div class="news-title">
+                            रूप में उपलब्ध हैं, लेकिन बहुमत को किसी अन्य रूप में परिवर्तन का
+                        </div>
+                        <div class="news-footer">13 Jul 2020 </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end section 2-->
+
+            <!-- start section 3-->
+            <div class="news-block2">
+                <div class="image-block2">
+                    <amp-img src="https://sankeyimages.sakalmediagroup.com/sankey_esakal/s3fs-public/styles/generic_md_75/public/2Praniti_20Shinde_20Congress_20Solapur_0.jpg?C61diL_ZRfGyxe3asGM_wso8.v8wVmox&itok=ll0CpNd_" layout="responsive" width="350" height="200"></amp-img>
+                </div>
+                <div class="content-block">
+                    <div class="news-section-title">इंटरनेट</div>
+                    <div class="news-title">
+                        रूप में उपलब्ध हैं, लेकिन बहुमत को किसी अन्य रूप में परिवर्तन का
+                    </div>
+                    <div class="news-description">
+                        के एक अनुच्छेद का उपयोग करने जा रहे हैं, तो आप को यकीन दिला दें कि पाठ के मध्य में वहाँ कुछ भी शर्मनाक छिपा हुआ नहीं है. इंटरनेट पर सभी जनरेटर पूर्वनिर्धारित </div>
+                    <div class="news-footer">13 Jul 2020 </div>
+                </div>
+            </div>
+
+            <div class="news-block2">
+                <div class="image-block2">
+                    <amp-img src="https://sankeyimages.sakalmediagroup.com/sankey_esakal/s3fs-public/styles/generic_md_75/public/2Praniti_20Shinde_20Congress_20Solapur_0.jpg?C61diL_ZRfGyxe3asGM_wso8.v8wVmox&itok=ll0CpNd_" layout="responsive" width="350" height="200"></amp-img>
+                </div>
+                <div class="content-block">
+                    <div class="news-section-title">इंटरनेट</div>
+                    <div class="news-title">
+                        रूप में उपलब्ध हैं, लेकिन बहुमत को किसी अन्य रूप में परिवर्तन का
+                    </div>
+                    <div class="news-description">
+                        के एक अनुच्छेद का उपयोग करने जा रहे हैं, तो आप को यकीन दिला दें कि पाठ के मध्य में वहाँ कुछ भी शर्मनाक छिपा हुआ नहीं है. इंटरनेट पर सभी जनरेटर पूर्वनिर्धारित </div>
+                    <div class="news-footer">13 Jul 2020 </div>
+                </div>
+            </div>
+
+            <div class="news-block2">
+                <div class="image-block2">
+                    <amp-img src="https://sankeyimages.sakalmediagroup.com/sankey_esakal/s3fs-public/styles/generic_md_75/public/2Praniti_20Shinde_20Congress_20Solapur_0.jpg?C61diL_ZRfGyxe3asGM_wso8.v8wVmox&itok=ll0CpNd_" layout="responsive" width="350" height="200"></amp-img>
+                </div>
+                <div class="content-block">
+                    <div class="news-section-title">इंटरनेट</div>
+                    <div class="news-title">
+                        रूप में उपलब्ध हैं, लेकिन बहुमत को किसी अन्य रूप में परिवर्तन का
+                    </div>
+                    <div class="news-description">
+                        के एक अनुच्छेद का उपयोग करने जा रहे हैं, तो आप को यकीन दिला दें कि पाठ के मध्य में वहाँ कुछ भी शर्मनाक छिपा हुआ नहीं है. इंटरनेट पर सभी जनरेटर पूर्वनिर्धारित </div>
+                    <div class="news-footer">13 Jul 2020 </div>
+                </div>
+            </div>
+
+            <div class="news-block2">
+                <div class="image-block2">
+                    <amp-img src="https://sankeyimages.sakalmediagroup.com/sankey_esakal/s3fs-public/styles/generic_md_75/public/2Praniti_20Shinde_20Congress_20Solapur_0.jpg?C61diL_ZRfGyxe3asGM_wso8.v8wVmox&itok=ll0CpNd_" layout="responsive" width="350" height="200"></amp-img>
+                </div>
+                <div class="content-block">
+                    <div class="news-section-title">इंटरनेट</div>
+                    <div class="news-title">
+                        रूप में उपलब्ध हैं, लेकिन बहुमत को किसी अन्य रूप में परिवर्तन का
+                    </div>
+                    <div class="news-description">
+                        के एक अनुच्छेद का उपयोग करने जा रहे हैं, तो आप को यकीन दिला दें कि पाठ के मध्य में वहाँ कुछ भी शर्मनाक छिपा हुआ नहीं है. इंटरनेट पर सभी जनरेटर पूर्वनिर्धारित </div>
+                    <div class="news-footer">13 Jul 2020 </div>
+                </div>
+            </div>
+
+            <div class="news-block2">
+                <div class="image-block2">
+                    <amp-img src="https://sankeyimages.sakalmediagroup.com/sankey_esakal/s3fs-public/styles/generic_md_75/public/2Praniti_20Shinde_20Congress_20Solapur_0.jpg?C61diL_ZRfGyxe3asGM_wso8.v8wVmox&itok=ll0CpNd_" layout="responsive" width="350" height="200"></amp-img>
+                </div>
+                <div class="content-block">
+                    <div class="news-section-title">इंटरनेट</div>
+                    <div class="news-title">
+                        रूप में उपलब्ध हैं, लेकिन बहुमत को किसी अन्य रूप में परिवर्तन का
+                    </div>
+                    <div class="news-description">
+                        के एक अनुच्छेद का उपयोग करने जा रहे हैं, तो आप को यकीन दिला दें कि पाठ के मध्य में वहाँ कुछ भी शर्मनाक छिपा हुआ नहीं है. इंटरनेट पर सभी जनरेटर पूर्वनिर्धारित </div>
+                    <div class="news-footer">13 Jul 2020 </div>
+                </div>
+            </div>
+            <!-- end section 3-->
         </div>
+
+        <!-- start section 4-->
+
+        <section class="Entertainment">
+            <div class="section-title-mobile d-flex d-md-none justify-content-between">
+                <a href="manoranjan" target="_blank">
+                    <span class="section-title-alignment">
+                        ENTERTAINMENT            </span>
+                </a>
+                <a href="manoranjan" target="_blank">
+                    <i class="fa fa-angle-right mx-3"></i>
+                </a>
+            </div>
+
+            <div class="inner-container">
+                <div class="photography-section">
+                    <div class="photography">
+                        <amp-img src="1.jpeg " layout="responsive" width="100" height="60"></amp-img>
+                    </div>
+                    <div class="blank">
+                        <div class="photography-content-block">
+                            <div class="news-section-title">इंटरनेट</div>
+                            <div class="news-title">
+                                रूप में उपलब्ध हैं, लेकिन बहुमत को किसी अन्य रूप में परिवर्तन का
+                            </div>
+                            <div class="news-description">
+                                के एक अनुच्छेद का उपयोग करने जा रहे हैं, तो आप को यकीन दिला दें कि पाठ के मध्य में वहाँ कुछ भी शर्मनाक छिपा हुआ नहीं है. इंटरनेट पर सभी जनरेटर पूर्वनिर्धारित </div>
+                            <div class="news-footer">13 Jul 2020 </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="news-block">
+                    <div class="image-block">
+                        <amp-img src="https://sankeyimages.sakalmediagroup.com/sankey_esakal/s3fs-public/styles/generic_md_75/public/corona.jpg?uj7Kr74AYeW.gA6JLJ7Rs9YD8NvOPKT8&amp;itok=nuyn6K0d" layout="responsive" width="100" height="90"></amp-img>
+                    </div>
+                    <div class="content-block">
+                        <div class="news-title">
+                            रूप में उपलब्ध हैं, लेकिन बहुमत को किसी अन्य रूप में परिवर्तन का
+                        </div>
+                        <div class="news-footer">13 Jul 2020 </div>
+                    </div>
+                </div>
+
+                <div class="news-block">
+                    <div class="image-block">
+                        <amp-img src="https://sankeyimages.sakalmediagroup.com/sankey_esakal/s3fs-public/styles/generic_md_75/public/demo.jpg?Xy3xn807XRuGxdE3h8c82aoMfmws61G.&itok=XO5CL54h" layout="responsive" width="100" height="90"></amp-img>
+                    </div>
+                    <div class="content-block">
+                        <div class="news-title">
+                            रूप में उपलब्ध हैं, लेकिन बहुमत को किसी अन्य रूप में परिवर्तन का
+                        </div>
+                        <div class="news-footer">13 Jul 2020 </div>
+                    </div>
+                </div>
+
+                <div class="news-block">
+                    <div class="image-block">
+                        <amp-img src="https://sankeyimages.sakalmediagroup.com/sankey_esakal/s3fs-public/styles/generic_md_75/public/2Praniti_20Shinde_20Congress_20Solapur_0.jpg?C61diL_ZRfGyxe3asGM_wso8.v8wVmox&itok=ll0CpNd_" layout="responsive" width="100" height="90"></amp-img>
+                    </div>
+                    <div class="content-block">
+                        <div class="news-title">
+                            रूप में उपलब्ध हैं, लेकिन बहुमत को किसी अन्य रूप में परिवर्तन का
+                        </div>
+                        <div class="news-footer">13 Jul 2020 </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section 4-->
+
+        <!-- start section 5-->
+
+        <section class="Sports">
+            <div class="section-title-mobile d-flex d-md-none justify-content-between">
+                <a href="manoranjan" target="_blank">
+                    <span class="section-title-alignment">
+                        SPORTS           </span>
+                </a>
+                <a href="manoranjan" target="_blank">
+                    <i class="fa fa-angle-right mx-3"></i>
+                </a>
+            </div>
+
+            <div class="inner-container">
+                <div class="photography-section">
+                    <div class="photography">
+                        <amp-img src="1.jpeg " layout="responsive" width="100" height="60"></amp-img>
+                    </div>
+                    <div class="blank">
+                        <div class="photography-content-block">
+                            <div class="news-section-title">इंटरनेट</div>
+                            <div class="news-title">
+                                रूप में उपलब्ध हैं, लेकिन बहुमत को किसी अन्य रूप में परिवर्तन का
+                            </div>
+                            <div class="news-description">
+                                के एक अनुच्छेद का उपयोग करने जा रहे हैं, तो आप को यकीन दिला दें कि पाठ के मध्य में वहाँ कुछ भी शर्मनाक छिपा हुआ नहीं है. इंटरनेट पर सभी जनरेटर पूर्वनिर्धारित </div>
+                            <div class="news-footer">13 Jul 2020 </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="news-block">
+                    <div class="image-block">
+                        <amp-img src="https://sankeyimages.sakalmediagroup.com/sankey_esakal/s3fs-public/styles/generic_md_75/public/corona.jpg?uj7Kr74AYeW.gA6JLJ7Rs9YD8NvOPKT8&amp;itok=nuyn6K0d" layout="responsive" width="100" height="90"></amp-img>
+                    </div>
+                    <div class="content-block">
+                        <div class="news-title">
+                            रूप में उपलब्ध हैं, लेकिन बहुमत को किसी अन्य रूप में परिवर्तन का
+                        </div>
+                        <div class="news-footer">13 Jul 2020 </div>
+                    </div>
+                </div>
+
+                <div class="news-block">
+                    <div class="image-block">
+                        <amp-img src="https://sankeyimages.sakalmediagroup.com/sankey_esakal/s3fs-public/styles/generic_md_75/public/demo.jpg?Xy3xn807XRuGxdE3h8c82aoMfmws61G.&itok=XO5CL54h" layout="responsive" width="100" height="90"></amp-img>
+                    </div>
+                    <div class="content-block">
+                        <div class="news-title">
+                            रूप में उपलब्ध हैं, लेकिन बहुमत को किसी अन्य रूप में परिवर्तन का
+                        </div>
+                        <div class="news-footer">13 Jul 2020 </div>
+                    </div>
+                </div>
+
+                <div class="news-block">
+                    <div class="image-block">
+                        <amp-img src="https://sankeyimages.sakalmediagroup.com/sankey_esakal/s3fs-public/styles/generic_md_75/public/2Praniti_20Shinde_20Congress_20Solapur_0.jpg?C61diL_ZRfGyxe3asGM_wso8.v8wVmox&itok=ll0CpNd_" layout="responsive" width="100" height="90"></amp-img>
+                    </div>
+                    <div class="content-block">
+                        <div class="news-title">
+                            रूप में उपलब्ध हैं, लेकिन बहुमत को किसी अन्य रूप में परिवर्तन का
+                        </div>
+                        <div class="news-footer">13 Jul 2020 </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- end section 5-->
+
+
     </div>
 </body>
 
