@@ -17,8 +17,7 @@
 }
 
 .inner-container {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0px 10px 0px 10px;
     margin-bottom: 10px;
     width: 94%;
     height: fit-content;
@@ -30,7 +29,7 @@
     color: white;
     background-color: #0060aa;
     width: 90%;
-    margin: 0px 16px 0px 2%;
+    margin: 0px 10px 0px 10px;
     height: fit-content;
 }
 
