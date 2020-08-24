@@ -1,0 +1,282 @@
+<!doctype html>
+<html amp lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+
+    <title>Hello, AMPs</title>
+    <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "NewsArticle",
+            "headline": "Open-source framework for publishing content",
+            "datePublished": "2015-10-07T12:02:41Z",
+            "image": [
+                "logo.jpg"
+            ]
+        }
+    </script>
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both
+        }
+        
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+        
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+        
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+        
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+        
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+    </style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+    <style amp-custom>
+        body {
+            background-color: gray;
+        }
+        
+        @font-face {
+            font-family: 'sakalfont';
+            font-display: swap;
+            src: url(https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/font/EkMukta-Regular.ttf) format("truetype"), url(https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/font/EkMukta-Regular.eot) format("eot"), url(https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/font/EkMukta-Regular.svg) format("svg");
+        }
+        
+        * {
+            font-family: sakalfont;
+        }
+        
+        .main-container {
+            background: white;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            height: fit-content;
+            padding: 20px 0px 20px 0px;
+        }
+        
+        .inner-container {
+            margin-left: auto;
+            margin-right: auto;
+            width: 94%;
+            height: fit-content;
+        }
+        
+        .header-footer-block {
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            height: 50px;
+            background: #0060aa;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .news-title {
+            font-size: 18px;
+            font-weight: 600;
+            -webkit-line-clamp: 2;
+            max-height: 31px;
+            overflow: hidden;
+            line-height: 1.3;
+            padding: 15px;
+        }
+        
+        .news-section-title {
+            width: fit-content;
+            font-size: 25px;
+            line-height: 1.3;
+            font-weight: bold;
+            max-height: 43px;
+            overflow: hidden;
+            padding: 20px;
+        }
+        
+        .author-title {
+            display: block;
+            font-size: 12px;
+            line-height: 1.2;
+            color: #7b7a7a;
+            padding: 10px;
+        }
+        
+        .news-description {
+            font-size: 20px;
+            line-height: 1.3;
+            color: #7b7a7a;
+            overflow: hidden;
+            font-weight: 500;
+            text-overflow: clip;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            max-height: 72px;
+            text-align: justify;
+        }
+        
+        .news-footer {
+            display: block;
+            font-size: 12px;
+            line-height: 1.2;
+            color: #7b7a7a;
+            padding: 15px 10px 10px 10px;
+        }
+        
+        .photography-section {
+            width: 100%;
+            height: 100%;
+            padding: 10px 0px 10px 0px;
+        }
+        
+        .photography {
+            width: 100%;
+        }
+        
+        .photography-content-block {
+            height: fit-content;
+            padding: 10px;
+            background: white;
+            position: absolute;
+            bottom: 0px;
+            left: 10px;
+            right: 10px;
+            text-align: center;
+        }
+        
+        .blank {
+            width: 100%;
+            height: 150px;
+            position: relative;
+        }
+        
+        .ad-block {
+            width: 80%;
+            height: 200px;
+            background: cornflowerblue;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+        .detail-block {
+            width: 100%;
+            height: fit-content;
+            font-size: 16px;
+            line-height: 1.3;
+            color: black;
+            font-weight: 500;
+            margin: 20px 0px 20px 0px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="header-footer-block"></div>
+    <div class="main-container">
+        <div class="inner-container">
+
+            <div class="photography">
+                <amp-img src="1.jpeg" layout="responsive" width="100" height="60"></amp-img>
+            </div>
+            <div class="blank">
+                <div class="photography-content-block">
+                    <div class="news-section-title">
+                        रूप में उपलब्ध हैं, लेकिन बहुमत को किसी अन्य रूप में बहुमत परिवर्तन का </div>
+
+                    <div class="news-footer">13 Jul 2020 </div>
+                    <div class="author-title">
+                        Authored by Akash Moge, Edited by Amit Kumar
+                    </div>
+                    <div class="news-title">
+                        रूप में उपलब्ध हैं, लेकिन बहुमत को किसी अन्य रूप में बहुमत परिवर्तन का
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="inner-container">
+            <div class="ad-block">
+                <amp-img src="ad.png" layout="responsive" width="100" height="60"></amp-img>
+            </div>
+
+            <div class="detail-block">
+                <p>श्री गणेश चतुर्थी हे भाद्रपद शुक्ल चतुर्थीला केले जाणारे एक धार्मिक व्रत आहे. गणेशाच्या अवतारांपैकी गणेश याचा जन्म भाद्रपद शुक्ल चतुर्थीला झाला असे मानले जाते. गणेश चतुर्थी या दिवसाला महासिद्धीविनायकी चतुथी किंवा "शिवा" असेही म्हटले जाते.
+                </p>
+                <p>गाणपत्य संप्रदायाचे हे एक व्रत आहे. श्रावण शुक्ल चतुर्थी ते भाद्रपद शुक्ल चतुर्थी असे महिनाभर करायचे हे व्रत आहे. नदीकिनारी जाऊन, स्नान करून आपल्या हाताच्या अंगठ्याएवढी मातीची गणेशमूर्ती हातावरच तयार करावी. तिचे सोळा उपचारांनी पूजन करून
+                    .तिचा 1 मित्र आहे एक चुहा नदीतच विसर्जन करावी असे हे व्रत आहे. याला पार्थिव गणेश व्रत म्हणतात. महिनाभर जमले नाही तर किमान शेवटच्या दिवशी तरी पार्थिव मूर्तीची पूजा करावी अशी यामागे धारणा आहे.</p>
+
+            </div>
+            <div class="ad-block">
+                <amp-img src="ad.png" layout="responsive" width="100" height="60"></amp-img>
+            </div>
+            <div class="detail-block">
+                <p>गणेश चतुर्थीला गणेशाच्या मूर्तीची प्राणप्रतिष्ठा केली जाते. श्री गणेशाच्या प्रतिष्ठापना विधीमध्ये पार्थिव मूर्तीची आवाहन,स्नान,अभिषेक,वस्त्र,चंदन,फुले,पत्री, नैवेद्य इ.सोळा उपचारांनी पूजा केली जाते. यामध्ये त्याला विविध २१ पत्री अर्पण
+                    केल्या जातात. पावसाळ्यात या सर्व पत्री सामान्यत: उपलब्ध असतात आणि त्या प्रत्येक वनस्पतीला काही औषधी गुणधर्मही आहेत.[५]मूर्तीचे विसर्जन करण्यापूर्वी तिची उत्तरपूजा करतात. मूर्तीचे विसर्जन करण्यापूर्वी पुढील मंत्र म्हणतात. ’यान्तु देवगणा:
+                    सर्वे पूजामादाय पार्थिवीम् ।इष्टकामप्रसिद्ध्यर्थं पुनरागमनाय च’ ।। श्री महागणपतिपूजन केलेल्या नारळावर, तसेच उमामहेश्‍वर आणि श्री सिद्धिविनायक यांच्यावर अक्षता वाहून मूर्ती स्थानापासून थोडी हलवतात. त्यानंतर जलाशयात तिचे विसर्जन करतात.
+                    काळाच्या ओघात हे व्रत कुटुंबाच्या पद्धतीनुसार दीड, पाच,सात, दहा दिवस केले जाते. काही कुटुंबात २१ दिवस हे व्रत करतात तर काही ठिकाणी हे व्रत वार्षिक स्वरूपाचे असते.</p>
+
+                <p>गणेशोत्सव संपादन करा गणपती ही संघटनेची देवता आहे.ऋग्वेदात ब्रहमणस्पती देवतेची स्तुती केलेली आहे. तो सर्व गणांचा अधिपती आहे असे त्यात म्हटले आहे. या देवतेचा विकास होऊन पुराणकाळात तिला गणपती हे रूप प्राप्त झाले असे मानले जाते. भाद्रपद शुक्ल
+                    चतुर्थीपासून अनंत चतुर्दशीपर्यंत महाराष्ट्रात गणेशोत्सव साजरा होत असतो.सार्वजनिक गणेश उत्सवाची सुरुवात लोकमान्य टिळकांनी १८९४ साली केली. या काळात गणेशाच्या उपस्थितीत अनेक धार्मिक व सामाजिक सार्वजनिक कार्यक्रम केले जातात. गणेशोत्सव
+                    मंडळाचे कार्यकर्ते गणपतीबाप्पांचे स्वागत कसे करावे, कोणता देखावा उभारावा, कोणत्या भव्य मूर्तीची प्रतिष्ठापना करावी, कोणत्या स्पर्धा घ्याव्यात, व्याख्यानाला कुणाला निमंत्रण द्यावे या विचारात दंग असतात.</p>
+
+            </div>
+            <div class="ad-block">
+                <amp-img src="ad.png" layout="responsive" width="100" height="60"></amp-img>
+            </div>
+            <div class="detail-block">
+                <p>सार्वजनिक गणेशोत्सव सुरवात लोकमान्य बाळ गंगाधर टिळक यांनी भारतीयांना एकत्र आणण्यासाठी आणि विचारांची देवाणघेवाण करण्यासाठी सार्वजनिक गणेशोत्सवाची सुरूवात केली होती.भारतीय स्वातंत्र्य लढ्याबाबत जागरूकता निर्माण करण्यासाठी टिळकांनी सार्वजनिक
+                    गणेशोत्सवाच्या व्यासपीठाचा वापर केला ही बाब कुणी नाकारणार नाही. गणेशोत्सव आणि शिवजयंती या प्रसंगाचं औचित्य साधून टिळकांनी युवकांमध्ये राष्ट्रतेज जागृत केलं.</p>
+            </div>
+        </div>
+    </div>
+    <div class="header-footer-block"></div>
+</body>
+
+</html>
