@@ -8,7 +8,7 @@
     <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
     <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
 
-    <title>Hello, AMPs</title>
+    <title>Section Page</title>
     <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -157,11 +157,11 @@
         }
         
         .photography-content-block {
-            padding: 10px;
+            padding: 16px;
             background: white;
             position: absolute;
             bottom: 0px;
-            left: 35px;
+            left: 8%;
         }
         
         .blank {
@@ -219,22 +219,36 @@
         }
         
         .section-title-mobile {
-            font-family: gothamFont;
             font-weight: 600;
             font-size: 15px;
             color: white;
-            /* margin-bottom: 1rem;
-            margin-top: 10px; */
             background-color: #0060aa;
-            width: 100%;
-            padding: 0.5rem;
-            align-items: center;
+            width: 90%;
+            padding: 4px 0px 0px 8px;
         }
         
-        .section-title-mobile a {
-            font-size: 15px;
-            color: white;
-            text-decoration: none;
+        .section-header {
+            display: flex;
+            flex-direction: row;
+            background-color: #0060aa;
+            justify-content: center;
+            height: 33px;
+        }
+        
+        .right-box {
+            width: 10%;
+        }
+        
+        .arrow {
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            display: inline-block;
+            padding: 3px;
+        }
+        
+        .right {
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
         }
     </style>
 </head>
@@ -404,16 +418,12 @@
         <!-- start section 4-->
 
         <section class="Entertainment">
-            <div class="section-title-mobile d-flex d-md-none justify-content-between">
-                <a href="manoranjan" target="_blank">
-                    <span class="section-title-alignment">
-                        ENTERTAINMENT            </span>
-                </a>
-                <a href="manoranjan" target="_blank">
-                    <i class="fa fa-angle-right mx-3"></i>
-                </a>
+            <div class="section-header">
+                <div class="section-title-mobile "> ENTERTAINMENT </div>
+                <div class="right-box">
+                    <i class="arrow right"></i>
+                </div>
             </div>
-
             <div class="inner-container">
                 <div class="photography-section">
                     <div class="photography">
@@ -483,14 +493,11 @@
         <!-- start section 5-->
 
         <section class="Sports">
-            <div class="section-title-mobile d-flex d-md-none justify-content-between">
-                <a href="manoranjan" target="_blank">
-                    <span class="section-title-alignment">
-                        SPORTS           </span>
-                </a>
-                <a href="manoranjan" target="_blank">
-                    <i class="fa fa-angle-right mx-3"></i>
-                </a>
+            <div class="section-header">
+                <div class="section-title-mobile "> SPORTS </div>
+                <div class="right-box">
+                    <i class="arrow right"></i>
+                </div>
             </div>
 
             <div class="inner-container">
