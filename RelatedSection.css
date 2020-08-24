@@ -1,0 +1,215 @@
+.mobile-global-nav {
+    width: 100vw;
+    height: 70px;
+    display: flex !important;
+    align-items: center;
+    font-size: 0.8rem;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 20;
+}
+
+.mobile-global-nav #mobile-side-menu-btn {
+    right: 20px;
+    position: absolute;
+}
+
+.mobile-logo {
+    background-image: url(https://sankey-esakal.s3.ap-south-1.amazonaws.com/esakal-new-design/images/sakal_blue_logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 70px;
+    width: 180px;
+    margin: 0 auto;
+}
+
+.mobile-global-nav .mobile-user-login {
+    left: 20px;
+    position: absolute;
+}
+
+.mobile-user-login a {
+    color: black;
+}
+
+.mobile-nav-wrapper {
+    display: flex;
+    width: 100%;
+    height: 6.5vh;
+    font-size: 16px;
+    background-color: #0060aa;
+    /* box-shadow: inset 0px 2px 3px 0px #061014; */
+    color: white;
+    position: sticky;
+    top: 70px;
+    z-index: 20;
+}
+
+.mobile-nav ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.mobile-nav ul li {
+    text-shadow: 0.5px 0.5px;
+    padding: 0px 11px;
+    position: relative;
+    width: 20%;
+    text-align: center;
+}
+
+.mobile-nav-wrapper a {
+    color: white;
+}
+
+.main-container {
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: fit-content;
+}
+
+.inner-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 94%;
+    height: fit-content;
+}
+
+.section-title-mobile {
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+    background-color: #0060aa;
+    width: 90%;
+    margin: 0px 16px 0px 2%;
+    height: fit-content;
+}
+
+.section-header {
+    display: flex;
+    flex-direction: row;
+    background-color: #0060aa;
+    align-items: center;
+    height: 40px;
+}
+
+.right-box {
+    width: 10%;
+    height: fit-content;
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.news-section-title {
+    width: fit-content;
+    font-size: 12px;
+    line-height: 1.1;
+    color: #0060aa;
+    font-weight: bold;
+    margin-bottom: 6px;
+    margin-top: 3px;
+}
+
+.news-section-title:after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 80%;
+    border: 1.5px solid #898989;
+}
+
+.news-title {
+    font-size: 18px;
+    font-weight: bold;
+    -webkit-line-clamp: 2;
+    max-height: 46px;
+    line-height: 1.3;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+.news-description {
+    font-size: 16px;
+    line-height: 1.3;
+    color: #7b7a7a;
+    overflow: hidden;
+    font-weight: 500;
+    text-overflow: clip;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    max-height: 80px;
+    text-align: justify;
+    margin-top: 5px;
+}
+
+.news-footer {
+    display: block;
+    font-size: 10px;
+    line-height: 1.2;
+    color: #7b7a7a;
+    margin-top: 10px;
+}
+
+.related-stories {
+    width: 100%;
+    background: #DCDCDC;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.news-block {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0px 10px 0px;
+    color: #292B2C;
+    align-items: center;
+    height: fit-content;
+    border-bottom: 1px solid #999999;
+}
+
+.image-block img {
+    width: 100px;
+    height: 100px;
+}
+
+.content-block {
+    width: 100%;
+    height: fit-content;
+    padding-right: 15px;
+}
+
+.ad-section {
+    padding-bottom: 30px;
+    padding-top: 20px;
+    border-bottom: 1px solid #999999;
+}
+
+.ad-block {
+    width: 100%;
+    height: 250px;
+    background: gray;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid #999999;
+}
