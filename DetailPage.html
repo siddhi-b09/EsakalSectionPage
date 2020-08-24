@@ -119,7 +119,8 @@
         }
         
         .news-title {
-            font-size: 18px;
+            font-size: 16px;
+            color: black;
             font-weight: 600;
             -webkit-line-clamp: 2;
             max-height: 31px;
@@ -130,20 +131,28 @@
         
         .news-section-title {
             width: fit-content;
-            font-size: 25px;
+            font-size: 24px;
             line-height: 1.3;
             font-weight: bold;
-            max-height: 43px;
+            max-height: 42px;
             overflow: hidden;
             padding: 20px;
         }
         
         .author-title {
             display: block;
-            font-size: 12px;
+            font-size: 11px;
             line-height: 1.2;
-            color: #7b7a7a;
-            padding: 10px;
+            color: #787777;
+            padding: 11px;
+        }
+        
+        .news-footer {
+            display: block;
+            font-size: 11px;
+            line-height: 1.2;
+            color: #787777;
+            padding: 11px 10px 10px 10px;
         }
         
         .news-description {
@@ -158,14 +167,6 @@
             -webkit-box-orient: vertical;
             max-height: 72px;
             text-align: justify;
-        }
-        
-        .news-footer {
-            display: block;
-            font-size: 12px;
-            line-height: 1.2;
-            color: #7b7a7a;
-            padding: 15px 10px 10px 10px;
         }
         
         .photography-section {
@@ -191,22 +192,25 @@
         
         .blank {
             width: 100%;
-            height: 150px;
+            height: 180px;
             position: relative;
         }
         
         .ad-block {
-            width: 80%;
+            width: 300px;
+            margin: 0 auto;
+            margin-top: 0px;
             margin-right: auto;
+            margin-bottom: 0px;
             margin-left: auto;
         }
         
         .detail-block {
             width: 100%;
             height: fit-content;
-            font-size: 16px;
+            font-size: 17px;
             line-height: 1.3;
-            color: black;
+            color: #292B2C;
             font-weight: 500;
             margin: 20px 0px 20px 0px;
         }
@@ -217,31 +221,32 @@
 <body>
     <div class="header-footer-block"></div>
     <div class="main-container">
-        <div class="inner-container">
 
-            <div class="photography">
-                <amp-img src="1.jpeg" layout="responsive" width="100" height="60"></amp-img>
-            </div>
-            <div class="blank">
-                <div class="photography-content-block">
-                    <div class="news-section-title">
-                        रूप में उपलब्ध हैं, लेकिन बहुमत को किसी अन्य रूप में बहुमत परिवर्तन का </div>
 
-                    <div class="news-footer">13 Jul 2020 </div>
-                    <div class="author-title">
-                        Authored by Akash Moge, Edited by Amit Kumar
-                    </div>
-                    <div class="news-title">
-                        रूप में उपलब्ध हैं, लेकिन बहुमत को किसी अन्य रूप में बहुमत परिवर्तन का
-                    </div>
+        <div class="photography">
+            <amp-img src="https://a0.muscache.com/im/pictures/02aa55dd-fdad-484b-8ec7-69bb35902cd0.jpg?aki_policy=large" layout="responsive" width="100" height="60"></amp-img>
+        </div>
+
+        <div class="blank">
+            <div class="photography-content-block">
+                <div class="news-section-title">
+                    रूप में उपलब्ध हैं, लेकिन बहुमत को किसी अन्य रूप में बहुमत परिवर्तन का </div>
+
+                <div class="news-footer">13 Jul 2020 </div>
+                <div class="author-title">
+                    Authored by Akash Moge, Edited by Amit Kumar
+                </div>
+                <div class="news-title">
+                    रूप में उपलब्ध हैं, लेकिन बहुमत को किसी अन्य रूप में बहुमत परिवर्तन का
                 </div>
             </div>
         </div>
 
 
+
         <div class="inner-container">
             <div class="ad-block">
-                <amp-img src="ad.png" layout="responsive" width="100" height="60"></amp-img>
+                <img src="https://gourmetads.com/wp-content/uploads/2019/02/300x250-barilla.jpg" layout="responsive" width="300" height="250">
             </div>
 
             <div class="detail-block">
@@ -252,7 +257,7 @@
 
             </div>
             <div class="ad-block">
-                <amp-img src="ad.png" layout="responsive" width="100" height="60"></amp-img>
+                <amp-img src="https://www.disruptivestatic.com/wp-content/uploads/2015/03/AG-ever-336x280-300x250.png" layout="responsive" width="300" height="250"></amp-img>
             </div>
             <div class="detail-block">
                 <p>गणेश चतुर्थीला गणेशाच्या मूर्तीची प्राणप्रतिष्ठा केली जाते. श्री गणेशाच्या प्रतिष्ठापना विधीमध्ये पार्थिव मूर्तीची आवाहन,स्नान,अभिषेक,वस्त्र,चंदन,फुले,पत्री, नैवेद्य इ.सोळा उपचारांनी पूजा केली जाते. यामध्ये त्याला विविध २१ पत्री अर्पण
@@ -266,7 +271,7 @@
 
             </div>
             <div class="ad-block">
-                <amp-img src="ad.png" layout="responsive" width="100" height="60"></amp-img>
+                <amp-img src="https://dge4uaysoh8oy.cloudfront.net/public/templates/gallery/img/b7xiyctx2/Travel-And-Fun-Banner-Ad-Template.jpg" layout="responsive" width="300" height="250"></amp-img>
             </div>
             <div class="detail-block">
                 <p>सार्वजनिक गणेशोत्सव सुरवात लोकमान्य बाळ गंगाधर टिळक यांनी भारतीयांना एकत्र आणण्यासाठी आणि विचारांची देवाणघेवाण करण्यासाठी सार्वजनिक गणेशोत्सवाची सुरूवात केली होती.भारतीय स्वातंत्र्य लढ्याबाबत जागरूकता निर्माण करण्यासाठी टिळकांनी सार्वजनिक
